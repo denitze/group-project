@@ -1,3 +1,7 @@
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Anton', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,4 +9,161 @@
 #news {
   background: url(./img/12.png) center / cover no-repeat;
   min-height: 100vh;
+  width: 100%;
+}
+
+#werbung div {
+  background: url(./img/13.jpg) center / cover no-repeat;
+  margin-top: 5%;
+
+  color: #fff;
+  margin-left: 15%;
+  width: 70%;
+  height: 50vh;
+  border: 2px solid black;
+  margin-bottom: 5%;
+}
+#group {
+  background-color: white;
+  padding-bottom: 5%;
+}
+h2 {
+  font-size: 3rem;
+  font-family: "Abril Fatface", cursive;
+  background: url(./img/12.png) center / cover no-repeat;
+}
+#group {
+  width: 80%;
+  margin-left: 10%;
+}
+h2 #G {
+  color: rgb(210, 48, 1);
+
+  font-size: 10rem;
+}
+h2 #T {
+  color: blue;
+  margin-left: 10%;
+
+  font-size: 10rem;
+}
+h2 #N {
+  color: rgb(237, 197, 104);
+
+  font-size: 10rem;
+}
+#complet {
+  background-color: #fff;
+
+  width: 80%;
+  margin-left: 10%;
+}
+#info {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+#info img {
+  width: 100%;
+  height: 40vh;
+}
+figure {
+  width: 100%;
+}
+figcaption {
+  width: 100%;
+}
+/* article {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+} */
+
+/*__________________________Navigation */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: black;
+
+  height: 7vh;
+  color: gray;
+  font-size: 1.5rem;
+}
+
+#navigation li {
+  list-style: none;
+}
+
+/* ________________Footer */
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+footer {
+  height: 40vh;
+  background-color: black;
+
+  margin: 0;
+}
+
+.social-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-icons {
+  padding: 10em 0;
+  list-style: none;
+
+  margin: 0 1em;
+}
+.social-icons li {
+  display: inline-block;
+  margin-left: 4em;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #00b5f5, #002a8f);
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #00b5f5;
+  background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
 }

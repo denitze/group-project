@@ -1,16 +1,40 @@
 
 
 import './App.css';
+
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+ 
+} from "react-router-dom";
+import Navigation from './components/Navigation';
+
+import Zeitung from './components/Zeitung';
+import Coronanews from './components/Coronanews';
+import Kontakt from './components/Kontakt';
+import Footer from './components/Footer';
 import News from './components/News';
-
-
 function App() {
   
   return (
-   <main >
-     <News/>
+   <main>
     
+    <Router>
+    
+    
+      <Switch>
+        <Route path="/news" component={News} />
+        
+        <Route path="/zeitung" component={Zeitung} />
+        <Route path="/coronanews" component={Coronanews} />
+        <Route path="/kontakt" component={Kontakt} />
+      </Switch>
+      
+     
 
+    </Router>
 
    </main>
   );
