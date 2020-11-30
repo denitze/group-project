@@ -1,0 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#news {
+  background: url(./img/12.png) center / cover no-repeat;
+  min-height: 100vh;
+}
