@@ -9,12 +9,12 @@ import {
   Route,
  
 } from "react-router-dom";
-import Navigation from './components/Navigation';
+
 
 import Zeitung from './components/Zeitung';
 import Coronanews from './components/Coronanews';
 import Kontakt from './components/Kontakt';
-import Footer from './components/Footer';
+
 import News from './components/News';
 function App() {
   
